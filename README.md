@@ -16,5 +16,31 @@ Bot przechodzi przez kolejne etapy zadania, pobiera dynamiczne parametry, wykonu
 - Biblioteki: `requests`, `re`, `hashlib`, `base64`, `time`  
 
 Można je zainstalować za pomocą polecenia:  
-```sh
+
 pip install requests
+
+Uruchomienie
+
+    Sklonuj repozytorium:
+
+git clone https://github.com/[twoja-nazwa-użytkownika]/task.zostansecurity.ninja.git
+
+    Przejdź do katalogu:
+
+cd task.zostansecurity.ninja
+
+    Uruchom skrypt:
+
+python task_bot.py
+
+Działanie skryptu
+
+    Pobiera stronę główną zadania i wyodrębnia dynamiczne parametry.
+    Wysyła odpowiednie zapytania do serwera, przechodząc przez kolejne etapy.
+    Przetwarza wymagane dane, w tym generowanie SHA256.
+    W przypadku otrzymania zakodowanej wiadomości w Base64, automatycznie ją dekoduje do pełnej treści.
+    Wyświetla finalną wiadomość, w tym adres e-mail do aplikacji.
+    
+Licencja
+Projekt wykonany na potrzeby zadania task.zostansecurity.ninja.
+Kod udostępniany na zasadach MIT License. Można go dowolnie używać i modyfikować.
